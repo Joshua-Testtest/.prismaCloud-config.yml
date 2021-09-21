@@ -34,3 +34,8 @@ stages:
         includeLatestTag: true
         useDefaultContext: false
         buildContext: '.'
+    - task: prisma-cloud-compute-scan@3
+      inputs:
+        scanType: 'images'
+        twistlockService: 'Prisma-compute credentials'
+        artifact: 'nginx:latest'
