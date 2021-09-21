@@ -37,5 +37,5 @@ stages:
     - task: prisma-cloud-compute-scan@3
       inputs:
         scanType: 'images'
-        twistlockService: 'Prisma-compute credentials'
+        twistlockService: 'compute'
         artifact: 'nginx:latest'
